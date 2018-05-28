@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modules Forecast Components Forecast Information should render component 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontSize": 34,
+        },
+        undefined,
+      ]
+    }
+  >
+    Berlin
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontSize": 20,
+          "marginTop": 4,
+        },
+        undefined,
+      ]
+    }
+  >
+    Clear sky
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontSize": 60,
+          "fontWeight": "200",
+          "marginTop": 8,
+        },
+        undefined,
+      ]
+    }
+  >
+    28
+    °
+  </Text>
+</View>
+`;
