@@ -3,6 +3,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import type { Weather } from '../../../types'
+
 import { WHITE } from '../../../colors'
 
 const WeatherContainer = styled.View`
@@ -30,18 +32,16 @@ const Temperature = styled.Text`
 `
 
 export type Props = {
-  city: string,
-  weatherStatus: string,
-  temperature: number
+  weather: Weather
 }
 
 const WeatherInformation = (props: Props) => {
-  const { city, weatherStatus, temperature } = props
+  const { city, status, temperature } = props.weather
 
   return (
     <WeatherContainer>
       <City>{city}</City>
-      <WeatherStatus>{weatherStatus}</WeatherStatus>
+      <WeatherStatus>{status}</WeatherStatus>
       <Temperature>{temperature}°</Temperature>
     </WeatherContainer>
   )

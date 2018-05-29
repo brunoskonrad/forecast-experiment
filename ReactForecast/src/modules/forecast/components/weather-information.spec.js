@@ -8,12 +8,13 @@ describe('Modules', () => {
     describe('Components', () => {
       describe('Forecast Information', () => {
         it('should render component', () => {
+          const weather = {
+            city: 'Berlin',
+            status: 'Clear sky',
+            temperature: 28
+          }
           const subject = TestRenderer.create(
-            <WeatherInformation
-              city="Berlin"
-              weatherStatus="Clear sky"
-              temperature="28"
-            />
+            <WeatherInformation weather={weather} />
           )
 
           expect(subject.toJSON()).toMatchSnapshot()
